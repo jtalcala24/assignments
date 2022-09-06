@@ -1,0 +1,156 @@
+.box {
+  /* height: 100px; */
+  border-radius: 10px;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3);
+  gap: 10px;
+}
+
+#boxOne {
+  background-color: crimson;
+  grid-column: 1/3;
+}
+
+#boxTwo {
+  background-color: cornflowerblue;
+  grid-column: 3/-1;
+}
+
+#boxThree {
+  background-color: mediumseagreen;
+  grid-column: 1/2;
+}
+
+#boxFour {
+  background-color: darkslateblue;
+  grid-column: 2/-1;
+}
+
+#boxFive {
+  background-color: darkkhaki;
+  grid-column: 1/-1;
+}
+
+/* #gridContainerTwo {
+  height: 500px;
+}
+
+#gridContainerThree {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+/* gap: 10px;
+}
+
+#boxOneThree {
+  background-color: crimson;
+  grid-column: 1/-1;
+}
+
+#boxTwoThree {
+  background-color: cornflowerblue;
+  grid-column: 1/3;
+  grid-row: 2/4;
+  height: 210px;
+}
+
+#boxThreeThree {
+  background-color: mediumseagreen;
+  grid-column: 3/-1;
+}
+
+#boxFourThree {
+  background-color: darkslateblue;
+  grid-column: 3/4;
+}
+
+#boxFiveThree {
+  background-color: darkslateblue;
+  grid-column: 4/5;
+} */
+
+/*phone*/
+@media only screen and (max-width: 500px) {
+  #boxOne {
+    background-color: crimson;
+    grid-column: 1/-1;
+  }
+
+  #boxTwo {
+    background-color: cornflowerblue;
+    grid-column: 1/-1;
+  }
+
+  #boxThree {
+    background-color: mediumseagreen;
+    grid-column: 1/-1;
+  }
+
+  #boxFour {
+    background-color: darkslateblue;
+    grid-column: 1/-1;
+  }
+
+  #boxFive {
+    background-color: darkkhaki;
+    grid-column: 1/-1;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  #boxOne {
+    background-color: crimson;
+    grid-column: 1/-1;
+  }
+
+  #boxTwo {
+    background-color: cornflowerblue;
+    grid-column: 1/2;
+  }
+
+  #boxThree {
+    background-color: mediumseagreen;
+    grid-column: 2/-1;
+  }
+
+  #boxFour {
+    background-color: darkslateblue;
+    grid-column: 1/-1;
+  }
+
+  #boxFive {
+    background-color: darkkhaki;
+    grid-column: 1/-1;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #boxOne {
+    background-color: crimson;
+    grid-column: 1/-1;
+  }
+
+  #boxTwo {
+    background-color: cornflowerblue;
+    grid-column: 1/2;
+  }
+
+  #boxThree {
+    background-color: mediumseagreen;
+    grid-column: 2/4;
+  }
+
+  #boxFour {
+    background-color: darkslateblue;
+    grid-column: 4/5;
+  }
+
+  #boxFive {
+    background-color: darkkhaki;
+    grid-column: 1/-1;
+  }
+}
